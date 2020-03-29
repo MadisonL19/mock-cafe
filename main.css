@@ -1,0 +1,577 @@
+/* Updating font sizes to responsive screens */
+
+/* General Starts */
+@media screen and (min-width: 701px) {
+body {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: .03em;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.8vw;
+}
+
+a {
+    font-size: 1.8vw;
+}
+
+button {
+    font-size: 1.7vw;
+}
+
+/* General Ends*/
+
+/* Navbar Starts */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .navbar-logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-self: start;
+}
+
+.navbar-logo img {
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    height: 50%;
+}
+
+.navbar-logo p {
+    align-self: center;
+    justify-self: center;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navbar .navbar-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar .navbar-links a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.navbar .navbar-links a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+/* Navbar Ends */
+
+/* Hero Starts */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.hero img {
+    width: 110%
+}
+
+#hero-header {
+    white-space: nowrap;
+    font-size: 5vw;
+}
+
+#hero-slogan {
+    font-weight: normal;
+}
+
+.hero .hero-info {
+    text-align: center;
+    align-self: center;
+} 
+
+.hero .hero-info button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 1vw 3vw;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+/* Hero Ends */
+
+.top-svg {
+    background-image: url('SVG/about2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About Starts */
+
+.about {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.about p {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* About Ends */
+
+/* First-Mid Starts */
+
+.first-mid {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#location-header {
+    padding-left: 23%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    align-self: end;
+}
+
+#donut1 {
+    padding-left: 5%;
+}
+
+
+/* First-Mid Ends */
+
+/* Locations Starts */
+
+.locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.location-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 30%;
+    padding-top: 20%;
+}
+
+.location-top p {
+    margin: 2%;
+}
+
+.location-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 30%;
+}
+
+.location-bottom p {
+    margin: 2%;
+}
+
+/* Locations Ends */
+
+.bottom-svg {
+    background-image: url('SVG/footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Second-Mid Starts */
+
+.second-mid {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#donut2 {
+    justify-self: start;
+}
+/* Second-Mid Ends */
+
+/* Contact Starts */
+.contact {
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+#contact-header {
+    text-align: center;
+}
+
+#contact-email {
+    display: grid;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+#contact-email:hover {
+    color: grey;
+}
+
+.contact ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 15%;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact ul li {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.contact ul li a {
+    font-size: 3vw;
+    color: black;
+}
+
+.contact ul li a:hover {
+    color: grey;
+} 
+
+/* Contact Ends */
+
+/* Footer Starts */
+.footer {
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+/* Footer Ends */
+} 
+
+@media screen and (max-width: 700px) {
+    body {
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        box-sizing: border-box;
+        margin: 0;
+        letter-spacing: .03em;
+    }
+    
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 4vw;
+    }
+    
+    h3 {
+        font-size: 2.5vw;
+    }
+    
+    p {
+        font-size: 2.2vw;
+    }
+    
+    a {
+        font-size: 2vw;
+    }
+    
+    button {
+        font-size: 1.7vw;
+    }
+    
+    /* General Ends*/
+    
+    /* Navbar Starts */
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr .3fr;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    
+    .navbar .navbar-logo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-self: start;
+    }
+    
+    .navbar-logo img {
+        align-self: center;
+        justify-self: center;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .navbar-logo p {
+        align-self: center;
+        justify-self: start;
+        text-align: center;
+    }
+    
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-collapse {
+        align-self: center;
+        padding: 10px;
+    }
+
+    .hide {
+        display: none; 
+    }
+
+    .bar1, .bar2, .bar3 {
+        display: grid;
+        background-color: black;
+        grid-template-columns: 30px;
+        grid-template-rows: 2px;
+        margin: 5px;
+        max-width: 30px;
+        border-radius: 30px;
+    }
+
+    .toggler-options ul{
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 100px;
+        right: 4%;
+        margin: 0;
+    }
+
+    .toggler-options ul{
+        list-style: none;
+        border: 1px solid rgba(0, 0, 0, 1);
+    }
+
+    .toggler-options ul li a{
+        text-decoration: none;
+        color: black;
+        text-align: left;
+        padding: 10%;
+        display: block;
+        z-index: 1;
+        background-color: #FAEFF7;
+    }
+
+    .toggler-options ul li a:hover{
+        color: grey;
+    }
+    
+    /* Navbar Ends */
+    
+    /* Hero Starts */
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .hero img {
+        width: 110%;
+    }
+
+    #hero-header {
+        white-space: nowrap;
+        font-size: 5vw;
+    }
+    
+    #hero-slogan {
+        font-weight: normal;
+    }
+
+    .hero .hero-info {
+        text-align: center;
+        align-self: center;
+    } 
+    
+    .hero .hero-info button {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        padding: 1vw 3vw;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    }
+    /* Hero Ends */
+    
+    .top-svg {
+        background-image: url('SVG/about2.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* About Starts */
+    
+    .about {
+        padding-bottom: 15%;
+        padding-top: 5%;
+        text-align: center;
+    }
+    
+    .about p {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    /* About Ends */
+    
+    /* First-Mid Starts */
+    
+    .first-mid {
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    #location-header {
+        padding-left: 23%;
+        padding-top: 5%;
+        padding-bottom: 15%;
+        align-self: end;
+    }
+    
+    #donut1 {
+        padding-left: 5%;
+    }
+    
+    
+    /* First-Mid Ends */
+    
+    /* Locations Starts */
+    
+    .locations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .location-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 30%;
+        padding-top: 20%;
+    }
+
+    .location-top p {
+        margin: 2%;
+    }
+    
+    .location-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 30%;
+    }
+    
+    .location-bottom p {
+        margin: 2%;
+    }
+    
+    /* Locations Ends */
+    
+    .bottom-svg {
+        background-image: url('SVG/footer.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* Second-Mid Starts */
+    
+    .second-mid {
+        display: grid;
+        grid-template-columns: 1.5fr 2.5fr;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    #donut2 {
+        justify-self: start;
+    }
+    /* Second-Mid Ends */
+    
+    /* Contact Starts */
+    .contact {
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    
+    #contact-header {
+        text-align: center;
+    }
+    
+    #contact-email {
+        display: grid;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+    }
+    
+    #contact-email:hover {
+        color: grey;
+    }
+    
+    .contact ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 15%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .contact ul li {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .contact ul li a {
+        font-size: 3vw;
+        color: black;
+    }
+    
+    .contact ul li a:hover {
+        color: grey;
+    } 
+
+    /* Contact Ends */
+    
+    /* Footer Starts */
+    .footer {
+        padding-top: 5%;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+}
